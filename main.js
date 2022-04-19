@@ -3,6 +3,7 @@ let target = document.querySelector("#dynamic");
 function randomString() {
   let stringArr = ["Learn to HTML", "Learn to CSS", "Learn to Javascript"];
   let selectString = stringArr[Math.floor(Math.random() * stringArr.length)];
+  // Math.floor를 넣어 소수점으로 나오던 숫자를 3을 넘지 않는 랜덤한 숫자가 나오게 됨
   let selectStringArr = selectString.split("");
 
   return selectStringArr;
